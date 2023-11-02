@@ -1,60 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?familia = Poppins: wght @ 300; 400; 500; 600; 700 & display = swap ');
 
-body {
+cuerpo {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
+    margen: 0;
+    acolchado: 0;
+    color de fondo: # 000 ;
+    color: #fff ;
 }
 
-header {
-    background-color: #111;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 2px solid #fff;
+cabezazo {
+    color de fondo: # 111 ;
+    texto-alinear: centro;
+    acolchado: 10)))px 0;
+    fondo del borde: 2px sólido #fff ;
 }
 
-.header-content {
-    font-size: 1.5rem;
+. .header-content {
+    tamaño fuente: 1.5rem;
 }
 
-.content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    padding: 20px;
+. .contenido {
+    mostrar: rejilla;
+    cuadrícula-plantilla-columnas: repetir(Autocompletar, minmax(150px, 1fr));
+    brecha: 10)))px;
+    acolchado: 20))))px;
 }
 
-.subject-box {
-    color: #fff;
-    background-color: #111;
-    border: 1px solid #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2rem;
-    animation: bounce 2s both; /* Animación "bounce" de 2 segundos */
+. .subject-box {
+    color de fondo: # 111 ;
+    frontera: 1px sólido #fff ;
+    acolchado: 20))))px;
+    texto-alinear: centro;
+    tamaño fuente: 1.2rem;
+    animación: desvanecerse 1s ambos; / * Animación "fadeIn" de 1 segundo * /
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+@keyframes desvanecerse {
+    desde {
+        opacidad: 0;
+        transformarar: translateY(20))))px);
     }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
+    a {
+        opacidad: 1;
+        transformarar: translateY(0);
     }
 }
 
-.subject-box:hover {
-    transform: scale(1.05);
-}
-
-/* Media query para ajustar a 2 cuadros por fila en escritorio */
-@media (min-width: 768px) {
-    .content {
-        grid-template-columns: repeat(2, 1fr);
-    }
+. .subject-box :flotar {
+    transformar: escala(1.05);
 }
